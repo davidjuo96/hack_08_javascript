@@ -9,6 +9,7 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = 0;
 
+result = arr.filter(item => item.charAt(0) === 'b').length;
 
 //export result
 module.exports = result;

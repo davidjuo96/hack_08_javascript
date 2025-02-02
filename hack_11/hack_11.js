@@ -19,6 +19,25 @@ let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
 
+let numberArray_02 = numberArray.map(num => {
+    if (num === 1) return "one";
+    if (num === 2) return num;
+    if (num === 3) return "three";
+    if (num === 4) return num;
+    if (num === 5) return "five";
+})
+
+let stringArray_02 = stringArray.map(str =>{
+    switch (str) {
+        case "foo": return "f00";
+        case "bar": return "Bar";
+        case "baz": return "b@z";
+        case "qux": return "quX";
+        case "echo": return "3ch0";
+    }
+})
+
+result = ["h@ck", ...numberArray_02, "h@ck", ...stringArray_02, "h@ck"];
 
 //export result
 module.exports = result;

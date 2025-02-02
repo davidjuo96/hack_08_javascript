@@ -7,6 +7,9 @@
  */
 let result = [];
 
+let arr = [0, 1, 2, 3];
+
+result = arr.map(num => num * 2 + 1);
 
 //export result
 module.exports = result;
